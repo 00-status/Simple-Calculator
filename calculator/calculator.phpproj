@@ -16,6 +16,6 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="index.php" />
+    <Content Include="index.html" />
   </ItemGroup>
 </Project>
