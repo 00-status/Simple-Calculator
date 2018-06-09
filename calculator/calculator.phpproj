@@ -17,5 +17,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="math.js" />
   </ItemGroup>
 </Project>

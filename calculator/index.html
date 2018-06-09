@@ -6,9 +6,12 @@
     <!-- Import Semantic stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"/>
     <!-- Import JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Import Semantic JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    
+    <!-- import Calculator JS -->
+    <script src="math.js"></script>
 
 </head>
 <body>
@@ -20,18 +23,42 @@
             <div class="right aligned one column row">
                 <div class="column">
                     <div class="ui fluid action input">
-                        <input type="text" placeholder="0" />
-                        <div class="ui button">Search</div>
+                        <input id="equation" type="text" placeholder="0" />
+                        <div id="calculate" class="ui primary button">Calculate</div>
                     </div>
                 </div>
             </div>
-            <div class="center aligned two column row">
+            <div class="center aligned five column row">
+                <div class="column"><div class="item"><button id="seven" class="ui fluid grey button">7</button></div></div>
+                <div class="column"><div class="item"><button id="eight" class="ui fluid grey button">8</button></div></div>
+                <div class="column"><div class="item"><button id="nine" class="ui fluid grey button">9</button></div></div>
                 <div class="column">
-                    <div class="item"><button class="ui black button">+</button></div>
+                    <div class="item"><button id="add" class="ui fluid black button">+</button></div>
                 </div>
                 <div class="column">
-                    <div class="item"><button class="ui black button">-</button></div>
+                    <div class="item"><button id="subtract" class="ui fluid black button">-</button></div>
                 </div>
+            </div>
+            <div class="center aligned five column row">
+                <div class="column"><div class="item"><button id="four" class="ui fluid grey button">4</button></div></div>
+                <div class="column"><div class="item"><button id="five" class="ui fluid grey button">5</button></div></div>
+                <div class="column"><div class="item"><button id="six" class="ui fluid grey button">6</button></div></div>
+
+                <div class="column">
+                    <div class="item"><button id="multiply" class="ui fluid black button">x</button></div>
+                </div>
+                <div class="column">
+                    <div class="item"><button id="divide" class="ui fluid black button">/</button></div>
+                </div>
+            </div>
+            <div class="center aligned five column row">
+                <div class="column"><div class="item"><button id="three" class="ui fluid grey button">3</button></div></div>
+                <div class="column"><div class="item"><button id="two" class="ui fluid grey button">2</button></div></div>
+                <div class="column"><div class="item"><button id="one" class="ui fluid grey button">1</button></div></div>
+            </div>
+            <div class="center aligned five column row">
+                <div class="column"></div>
+                <div class="column"><div class="item"><button class="ui fluid grey button">0</button></div></div>
             </div>
         </div>
     </div>
